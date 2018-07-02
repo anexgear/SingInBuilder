@@ -1,6 +1,6 @@
 package mu.zz.axin.signinbuilderlib;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
 
 
 public class SignInBuilder implements ActivityHolder {
@@ -15,12 +15,7 @@ public class SignInBuilder implements ActivityHolder {
 
 
     @Override
-    public SignInBuilder bindToActivity(AppCompatActivity activity) {
-        return null;
-    }
-
-    @Override
-    public SignInBuilder setToolbar(Toolbar toolbar) {
+    public SignInBuilder bindToActivity(AppCompatActivity activity, int containerId) {
         return null;
     }
 
