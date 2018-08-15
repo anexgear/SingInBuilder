@@ -12,25 +12,25 @@ class SignInScreen extends ScreenView implements SignInView {
 
     @Override
     public SignInView signInEditText(int signInEditTextId) {
-        args.putInt(signInEditTextIdString, signInEditTextId);
+        editTextMap.put(signInEditTextIdString, signInEditTextId);
         return this;
     }
 
     @Override
     public SignInView passwordEditText(int passwordEditTextId) {
-        args.putInt(passwordEditTextIdString, passwordEditTextId);
+        editTextMap.put(passwordEditTextIdString, passwordEditTextId);
         return this;
     }
 
     @Override
     public SignInView signInButton(int signInButtonId) {
-        args.putInt(signInButtonIdString, signInButtonId);
+        textButtonMap.put(signInButtonIdString, signInButtonId);
         return this;
     }
 
     @Override
     public SignInView registerButton(int registerButtonId) {
-        args.putInt(registerButtonIdString, registerButtonId);
+        textButtonMap.put(registerButtonIdString, registerButtonId);
         return this;
     }
 
