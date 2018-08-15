@@ -8,8 +8,8 @@ import mu.zz.axin.signinbuilderlib.Fragments.SignInFragment;
 
 public class SignInViewBuilder  implements SignInView {
     private String layoutIdString = Environment.SCREEN_LAYOUT_ID;
-    private String signInFieldIdString = Environment.SCREEN_SIGN_IN_FIELD_ID;
-    private String passwordFieldIdString = Environment.SCREEN_PASSWORD_FIELD_ID;
+    private String signInFieldIdString = Environment.SCREEN_SIGN_IN_ET_ID;
+    private String passwordFieldIdString = Environment.SCREEN_PASSWORD_ET_ID;
     private String signInButtonIdString = Environment.SCREEN_SIGN_IN_BUTTON_ID;
     private String registerButtonIdString = Environment.SCREEN_REGISTER_BUTTON_ID;
     private Bundle customButtons;
@@ -27,13 +27,13 @@ public class SignInViewBuilder  implements SignInView {
     }
 
     @Override
-    public SignInViewBuilder signInField(int signInFieldId, SignInType signInType) {
+    public SignInViewBuilder signInField(int signInFieldId) {
         args.putInt(signInFieldIdString, signInFieldId);
         return this;
     }
 
     @Override
-    public SignInViewBuilder passwordField(int passwordFieldId, PasswordStrength passwordStrength) {
+    public SignInViewBuilder passwordField(int passwordFieldId) {
         args.putInt(passwordFieldIdString, passwordFieldId);
         return this;
     }
