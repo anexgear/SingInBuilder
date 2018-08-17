@@ -1,12 +1,10 @@
 package mu.zz.axin.signinbuilderlib.Configurations;
 
-import android.os.Bundle;
+public class SignInConfiguration extends BaseConfiguration {
 
-public class SignInConfiguration implements Configuration {
-    public SignInConfiguration(Bundle screen) {
 
-    }
 
+    @Override
     public Configuration configure() {
         return null;
     }

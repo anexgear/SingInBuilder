@@ -12,43 +12,43 @@ class RegisterScreen extends ScreenView implements RegistrationView {
 
     @Override
     public RegistrationView nameEditText(int signInEditTextId) {
-        editTextMap.put(nameEditTextIdString, signInEditTextId);
+        args.putInt(nameEditTextIdString, signInEditTextId);
         return this;
     }
 
     @Override
     public RegistrationView lastNameEditText(int lastNameEditTextId) {
-        editTextMap.put(lastNameEditTextIdString, lastNameEditTextId);
+        args.putInt(lastNameEditTextIdString, lastNameEditTextId);
         return this;
     }
 
     @Override
     public RegistrationView loginEditText(int loginEditTextId) {
-        editTextMap.put(loginEditTextIdString, loginEditTextId);
+        args.putInt(loginEditTextIdString, loginEditTextId);
         return this;
     }
 
     @Override
     public RegistrationView emailEditText(int emailEditTextId) {
-        editTextMap.put(emailEditTextIdString, emailEditTextId);
+        args.putInt(emailEditTextIdString, emailEditTextId);
         return this;
     }
 
     @Override
     public RegistrationView phoneEditText(int phoneEditTextId) {
-        editTextMap.put(phoneEditTextIdString, phoneEditTextId);
+        args.putInt(phoneEditTextIdString, phoneEditTextId);
         return this;
     }
 
     @Override
     public RegistrationView registerButton(int registerButtonId) {
-        textButtonMap.put(registerButtonIdString, registerButtonId);
+        args.putInt(registerButtonIdString, registerButtonId);
         return this;
     }
 
     @Override
     public RegistrationView backButton(int backButtonId) {
-        textButtonMap.put(backButtonIdString, backButtonId);
+        args.putInt(backButtonIdString, backButtonId);
         return this;
     }
 

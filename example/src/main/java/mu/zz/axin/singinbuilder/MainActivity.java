@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 
-import mu.zz.axin.signinbuilderlib.Configurations.SignInConfiguration;
+import mu.zz.axin.signinbuilderlib.Configurations.Configuration;
+import mu.zz.axin.signinbuilderlib.Configurations.ConfirmationConfiguration;
 import mu.zz.axin.signinbuilderlib.Navigation;
 import mu.zz.axin.signinbuilderlib.NavigationBuilder;
+import mu.zz.axin.signinbuilderlib.View.Screen;
 import mu.zz.axin.signinbuilderlib.View.ViewBuilder;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        Fragment loginScreen = new SignInViewBuilder()
+//        Fragment signInScreen = new SignInViewBuilder()
 //                .layout(R.layout.sign_in_screen)
 //                .signInEditText(R.id.signInEditText)
 //                .passwordField(R.id.passwordEditText)
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 //                .registerButton(R.id.registerButton)
 //                .build();
 
-        Screen loginScreen = new ViewBuilder()
+        Screen signInScreen = new ViewBuilder()
                 .signInScreen(R.layout.sign_in_screen)
                 .signInEditText(R.id.signInEditText)
                 .passwordEditText(R.id.passwordEditText)
@@ -50,16 +52,21 @@ public class MainActivity extends AppCompatActivity {
                 .backButton(R.id.confirmationBackButton)
                 .build();
 
-        SignInConfiguration mSignInConfiguration = new SignInConfiguration(loginScreen)
+
+        Configuration mSignInConfiguration;
+
+        Configuration mRegistrationConfiguration;
+
+        Configuration mConfirmationConfiguration = new ConfirmationConfiguration(signInScreen).alphanumeric()
                 .configure();
 
         Navigation navigation = new NavigationBuilder()
-                .loginScreen(loginScreen)
+                .loginScreen()
                 .registrationScreen(registrationScreen)
                 .confirmationScreen(confirmationScreen)
                 .start();
 
 
-//        getSupportFragmentManager().beginTransaction().replace(R.id.container, loginScreen).commit();
+//        getSupportFragmentManager().beginTransaction().replace(R.id.container, signInScreen).commit();
     }
 }

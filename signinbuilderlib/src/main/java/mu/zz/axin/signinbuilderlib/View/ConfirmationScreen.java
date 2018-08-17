@@ -14,19 +14,19 @@ class ConfirmationScreen extends ScreenView implements ConfirmationView {
 
     @Override
     public ConfirmationView confirmationEditText(int confirmationEditTextId) {
-        editTextMap.put(confirmationETString,confirmationEditTextId);
+        args.putInt(confirmationETString,confirmationEditTextId);
         return this;
     }
 
     @Override
     public ConfirmationView confirmButton(int confirmButtonId) {
-        textButtonMap.put(confirmButtonString, confirmButtonId);
+        args.putInt(confirmButtonString, confirmButtonId);
         return this;
     }
 
     @Override
     public ConfirmationView backButton(int backButtonId) {
-        textButtonMap.put(backButtonIdString, backButtonId);
+        args.putInt(backButtonIdString, backButtonId);
         return this;
     }
 

@@ -2,9 +2,6 @@ package mu.zz.axin.signinbuilderlib.View;
 
 import android.os.Bundle;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import mu.zz.axin.signinbuilderlib.Environment;
 
 abstract class ScreenView implements Screen  {
@@ -24,9 +21,17 @@ abstract class ScreenView implements Screen  {
     String backButtonIdString = Environment.SCREEN_BACK_BUTTON_ID;
 
     Bundle args;
-    Map<String,Integer> editTextMap = new HashMap<>();
-    Map<String,Integer> textButtonMap = new HashMap<>();
 
+
+    @Override
+    public ScreenView build() {
+        return this;
+    }
+
+    @Override
+    public Bundle getLayoutBundle() {
+        return args;
+    }
 
     @Override
     public int getLayoutId() {
@@ -43,16 +48,7 @@ abstract class ScreenView implements Screen  {
         return args.getInt(buttonIdString);
     }
 
-    @Override
-    public ScreenView build() {
-        for (Map.Entry<String, Integer> entry: editTextMap.entrySet()) {
-            args.putInt(entry.getKey(), entry.getValue());
-        }
-        for (Map.Entry<String, Integer> entry: textButtonMap.entrySet()) {
-            args.putInt(entry.getKey(), entry.getValue());
-        }
-        return this;
-    }
+
 
 
 }
