@@ -1,5 +1,7 @@
 package mu.zz.axin.signinbuilderlib;
 
+import mu.zz.axin.signinbuilderlib.View.Screen;
+
 public class NavigationBuilder implements Navigation {
 
 

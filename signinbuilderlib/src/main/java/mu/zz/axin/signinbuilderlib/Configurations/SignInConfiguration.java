@@ -1,6 +1,6 @@
 package mu.zz.axin.signinbuilderlib.Configurations;
 
-public class SignInConfiguration extends BaseConfiguration {
+public class SignInConfiguration extends BaseConfiguration implements SignInInterface {
 
 
 

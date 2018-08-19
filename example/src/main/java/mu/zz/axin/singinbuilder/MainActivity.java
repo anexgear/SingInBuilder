@@ -19,13 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        Fragment signInScreen = new SignInViewBuilder()
-//                .layout(R.layout.sign_in_screen)
-//                .signInEditText(R.id.signInEditText)
-//                .passwordField(R.id.passwordEditText)
-//                .signInButton(R.id.signInButton)
-//                .registerButton(R.id.registerButton)
-//                .build();
+
 
         Screen signInScreen = new ViewBuilder()
                 .signInScreen(R.layout.sign_in_screen)
@@ -57,11 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
         Configuration mRegistrationConfiguration;
 
-        Configuration mConfirmationConfiguration = new ConfirmationConfiguration(signInScreen).alphanumeric()
+        Configuration mConfirmationConfiguration = new ConfirmationConfiguration(signInScreen)
+                .alphanumeric()
                 .configure();
 
         Navigation navigation = new NavigationBuilder()
-                .loginScreen()
+                .loginScreen(signInScreen)
                 .registrationScreen(registrationScreen)
                 .confirmationScreen(confirmationScreen)
                 .start();
