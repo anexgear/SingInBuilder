@@ -1,11 +1,13 @@
-package mu.zz.axin.signinbuilderlib.View;
+package mu.zz.axin.signinbuilderlib.View.Registration;
 
 import android.os.Bundle;
 
+import mu.zz.axin.signinbuilderlib.View.ScreenView;
 
-class RegisterScreen extends ScreenView implements RegistrationView {
+
+public class RegisterScreen extends ScreenView implements RegistrationView {
     
-    RegisterScreen(int layoutId) {
+    public RegisterScreen(int layoutId) {
         args = new Bundle();
         args.putInt(layoutIdString, layoutId);
     }

@@ -1,11 +1,13 @@
-package mu.zz.axin.signinbuilderlib.View;
+package mu.zz.axin.signinbuilderlib.View.SignIn;
 
 import android.os.Bundle;
 
-class SignInScreen extends ScreenView implements SignInView {
+import mu.zz.axin.signinbuilderlib.View.ScreenView;
+
+public class SignInScreen extends ScreenView implements SignInView {
 
 
-    SignInScreen(int layoutId) {
+    public SignInScreen(int layoutId) {
         args = new Bundle();
         args.putInt(layoutIdString, layoutId);
     }

@@ -1,5 +1,6 @@
 package mu.zz.axin.signinbuilderlib;
 
+
 public class Environment {
 
     public static final String SCREEN_LAYOUT_ID = "layoutId";
@@ -23,5 +24,24 @@ public class Environment {
     public static final String SCREEN_REGISTER_BUTTON_ID = "registerButtonId";
     public static final String SCREEN_BACK_BUTTON_ID = "backButtonId";
     public static final String SCREEN_CONFIRM_BUTTON_ID = "confirmButtonId";
+
+//    Configuration
+    public static final String DISABLE_BUTTON = "disableButton";
+    public static final String ALPHABETIC = "alphabetic";
+    public static final String NUMERIC = "numeric";
+
+//    SignInConfig
+
+//    RegistrationConfig
+    public static final String AUTOCOMPLETE = "autocomplete";
+    public static final String NECESSARILY_PHONE = "necessarilyPhone";
+    public static final String NECESSARILY_EMAIL = "necessarilyEmail";
+    public static final String NECESSARILY_PASSWORD = "necessarilyPassword";
+    public static final String VALIDATE_PHONE = "validatePhone";
+    public static final String VALIDATE_EMAIL = "validateEmail";
+    public static final String VALIDATE_PASSWORD = "validatePassword";
+
+//    ConfirmationConfig
+    public static final String VALIDATE = "validate";
 
 }

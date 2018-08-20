@@ -1,13 +1,14 @@
-package mu.zz.axin.signinbuilderlib.View;
+package mu.zz.axin.signinbuilderlib.View.Confirmation;
 
 import android.os.Bundle;
 
+import mu.zz.axin.signinbuilderlib.View.ScreenView;
 
 
-class ConfirmationScreen extends ScreenView implements ConfirmationView {
+public class ConfirmationScreen extends ScreenView implements ConfirmationView {
 
 
-    ConfirmationScreen(int layoutId) {
+    public ConfirmationScreen(int layoutId) {
         args = new Bundle();
         args.putInt(layoutIdString, layoutId);
     }
