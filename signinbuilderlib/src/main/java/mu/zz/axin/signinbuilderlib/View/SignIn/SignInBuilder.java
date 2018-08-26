@@ -4,10 +4,10 @@ import android.os.Bundle;
 
 import mu.zz.axin.signinbuilderlib.View.ScreenView;
 
-public class SignInScreen extends ScreenView implements SignInView {
+public class SignInBuilder extends ScreenView implements SignInView {
 
 
-    public SignInScreen(int layoutId) {
+    public SignInBuilder(int layoutId) {
         args = new Bundle();
         args.putInt(layoutIdString, layoutId);
     }

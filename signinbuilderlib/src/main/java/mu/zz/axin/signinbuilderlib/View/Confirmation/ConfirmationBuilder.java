@@ -5,10 +5,10 @@ import android.os.Bundle;
 import mu.zz.axin.signinbuilderlib.View.ScreenView;
 
 
-public class ConfirmationScreen extends ScreenView implements ConfirmationView {
+public class ConfirmationBuilder extends ScreenView implements ConfirmationView {
 
 
-    public ConfirmationScreen(int layoutId) {
+    public ConfirmationBuilder(int layoutId) {
         args = new Bundle();
         args.putInt(layoutIdString, layoutId);
     }

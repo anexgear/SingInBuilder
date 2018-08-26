@@ -33,22 +33,6 @@ public abstract class ScreenView implements Screen  {
         return args;
     }
 
-    @Override
-    public int getLayoutId() {
-        return args.getInt(layoutIdString);
-    }
-
-    @Override
-    public int getEditTextId(String textViewIdString) {
-        return args.getInt(textViewIdString);
-    }
-
-    @Override
-    public int getButtonId(String buttonIdString) {
-        return args.getInt(buttonIdString);
-    }
-
-
 
 
 }

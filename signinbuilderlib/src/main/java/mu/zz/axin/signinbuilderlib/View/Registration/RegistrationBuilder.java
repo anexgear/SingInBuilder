@@ -5,9 +5,9 @@ import android.os.Bundle;
 import mu.zz.axin.signinbuilderlib.View.ScreenView;
 
 
-public class RegisterScreen extends ScreenView implements RegistrationView {
+public class RegistrationBuilder extends ScreenView implements RegistrationView {
     
-    public RegisterScreen(int layoutId) {
+    public RegistrationBuilder(int layoutId) {
         args = new Bundle();
         args.putInt(layoutIdString, layoutId);
     }
