@@ -1,11 +1,9 @@
-package mu.zz.axin.signinbuilderlib.View.Confirmation;
+package mu.zz.axin.signinbuilderlib.View;
 
 import android.support.annotation.IdRes;
 
-import mu.zz.axin.signinbuilderlib.View.Screen;
 
-
-public interface ConfirmationView extends Screen {
+public interface ConfirmationView extends Builder {
 
     ConfirmationView confirmationEditText(@IdRes int confirmationEditTextId);
     ConfirmationView confirmButton(@IdRes int confirmButtonId);

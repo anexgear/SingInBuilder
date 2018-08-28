@@ -12,6 +12,8 @@ public abstract class BaseConfiguration implements Configuration {
     protected String disableButtonString = Environment.DISABLE_BUTTON;
     protected String alphabeticString =  Environment.ALPHABETIC;
     protected String numericString = Environment.NUMERIC;
+    protected String validateSignInString = Environment.VALIDATE_SIGN_IN;
+    protected String validatePasswordString = Environment.VALIDATE_PASSWORD;
     protected boolean alphabetic = false;
     protected boolean numeric = false;
     protected boolean disableButton = false;

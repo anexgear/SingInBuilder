@@ -1,10 +1,8 @@
-package mu.zz.axin.signinbuilderlib.View.Registration;
+package mu.zz.axin.signinbuilderlib.View;
 
 import android.support.annotation.IdRes;
 
-import mu.zz.axin.signinbuilderlib.View.Screen;
-
-public interface RegistrationView extends Screen {
+public interface RegistrationView extends Builder {
 
     RegistrationView nameEditText(@IdRes int signInEditTextId);
     RegistrationView lastNameEditText(@IdRes int lastNameEditTextId);

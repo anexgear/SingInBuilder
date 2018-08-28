@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 
 import mu.zz.axin.signinbuilderlib.Configurations.Configuration;
+import mu.zz.axin.signinbuilderlib.Configurations.ConfigurationFactory;
 import mu.zz.axin.signinbuilderlib.Configurations.Confirmation.ConfirmationConfigurationBuilder;
 import mu.zz.axin.signinbuilderlib.Navigation;
 import mu.zz.axin.signinbuilderlib.NavigationBuilder;
@@ -47,12 +48,11 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
 
-        Configuration mSignInConfiguration;
+        Configuration mSignInConfiguration = new ConfigurationFactory().signInScreen(signInScreen);
 
-        Configuration mRegistrationConfiguration;
+        Configuration mRegistrationConfiguration = new ConfigurationFactory().registrationScreen(registrationScreen);
 
-        Configuration mConfirmationConfiguration = new ConfirmationConfigurationBuilder(signInScreen)
-                .configure();
+        Configuration mConfirmationConfiguration = new ConfigurationFactory().confirmationScreen(confirmationScreen);
 
         Navigation navigation = new NavigationBuilder()
                 .loginScreen(signInScreen)

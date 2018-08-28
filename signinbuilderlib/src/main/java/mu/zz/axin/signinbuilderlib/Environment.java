@@ -31,6 +31,7 @@ public class Environment {
     public static final String NUMERIC = "numeric";
 
 //    SignInConfig
+    public static final String VALIDATE_SIGN_IN = "validateSignIn";
 
 //    RegistrationConfig
     public static final String AUTOCOMPLETE = "autocomplete";

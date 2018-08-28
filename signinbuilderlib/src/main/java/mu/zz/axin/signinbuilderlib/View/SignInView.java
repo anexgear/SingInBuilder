@@ -1,10 +1,8 @@
-package mu.zz.axin.signinbuilderlib.View.SignIn;
+package mu.zz.axin.signinbuilderlib.View;
 
 import android.support.annotation.IdRes;
 
-import mu.zz.axin.signinbuilderlib.View.Screen;
-
-public interface SignInView extends Screen {
+public interface SignInView extends Builder {
 
     SignInView signInEditText(@IdRes int signInEditTextId);
     SignInView passwordEditText(@IdRes int passwordEditTextId);

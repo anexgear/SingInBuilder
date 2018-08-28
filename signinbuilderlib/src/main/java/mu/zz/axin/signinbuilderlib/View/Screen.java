@@ -6,5 +6,4 @@ public interface Screen {
 
     Bundle getLayoutBundle();
 
-    ScreenView build();
 }
