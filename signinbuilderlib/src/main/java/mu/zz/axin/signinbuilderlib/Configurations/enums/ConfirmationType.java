@@ -1,4 +1,4 @@
-package mu.zz.axin.signinbuilderlib.Configurations.Confirmation;
+package mu.zz.axin.signinbuilderlib.Configurations.enums;
 
 public enum ConfirmationType {
     ALPHABETIC,

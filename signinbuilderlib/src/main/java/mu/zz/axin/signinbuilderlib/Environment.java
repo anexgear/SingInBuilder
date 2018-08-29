@@ -33,6 +33,7 @@ public class Environment {
 //    SignInConfig
     public static final String VALIDATE_SIGN_IN = "validateSignIn";
 
+
 //    RegistrationConfig
     public static final String AUTOCOMPLETE = "autocomplete";
     public static final String NECESSARILY_PHONE = "necessarilyPhone";

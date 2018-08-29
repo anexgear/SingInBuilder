@@ -1,4 +1,4 @@
-package mu.zz.axin.signinbuilderlib.Configurations;
+package mu.zz.axin.signinbuilderlib.Configurations.interfaces;
 
 public interface Configuration {
 

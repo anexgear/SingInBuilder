@@ -1,6 +1,5 @@
-package mu.zz.axin.signinbuilderlib.Configurations.SignIn;
+package mu.zz.axin.signinbuilderlib.Configurations.interfaces;
 
-import mu.zz.axin.signinbuilderlib.Configurations.Configuration;
 import mu.zz.axin.signinbuilderlib.SignInType;
 
 public interface SignInConfiguration extends Configuration {

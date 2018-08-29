@@ -1,4 +1,4 @@
-package mu.zz.axin.signinbuilderlib.View;
+package mu.zz.axin.signinbuilderlib.View.interfaces;
 
 import android.support.annotation.IdRes;
 

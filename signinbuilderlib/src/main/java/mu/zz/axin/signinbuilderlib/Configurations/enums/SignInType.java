@@ -1,4 +1,4 @@
-package mu.zz.axin.signinbuilderlib.Configurations.SignIn;
+package mu.zz.axin.signinbuilderlib.Configurations.enums;
 
 public enum SignInType {
     PHONE,

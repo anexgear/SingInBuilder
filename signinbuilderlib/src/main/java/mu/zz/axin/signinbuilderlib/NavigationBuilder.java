@@ -1,22 +1,23 @@
 package mu.zz.axin.signinbuilderlib;
 
-import mu.zz.axin.signinbuilderlib.View.Screen;
+import mu.zz.axin.signinbuilderlib.Configurations.interfaces.Configuration;
+
 
 public class NavigationBuilder implements Navigation {
 
 
     @Override
-    public Navigation loginScreen(Screen loginScreen) {
+    public Navigation loginScreen(Configuration loginScreen) {
         return null;
     }
 
     @Override
-    public Navigation registrationScreen(Screen registrationScreen) {
+    public Navigation registrationScreen(Configuration registrationScreen) {
         return null;
     }
 
     @Override
-    public Navigation confirmationScreen(Screen confirmationScreen) {
+    public Navigation confirmationScreen(Configuration confirmationScreen) {
         return null;
     }
 

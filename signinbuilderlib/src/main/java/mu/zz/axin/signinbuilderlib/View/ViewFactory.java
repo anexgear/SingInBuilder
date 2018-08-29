@@ -4,6 +4,10 @@ import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 
 import mu.zz.axin.signinbuilderlib.Environment;
+import mu.zz.axin.signinbuilderlib.View.interfaces.ConfirmationView;
+import mu.zz.axin.signinbuilderlib.View.interfaces.RegistrationView;
+import mu.zz.axin.signinbuilderlib.View.interfaces.Screen;
+import mu.zz.axin.signinbuilderlib.View.interfaces.SignInView;
 
 public class ViewFactory {
 
@@ -34,7 +38,7 @@ public class ViewFactory {
     }
 
 
-    class SignInBuilder extends BaseScreenView implements SignInView {
+    private class SignInBuilder extends BaseScreenView implements SignInView {
 
 
         SignInBuilder(int layoutId) {
@@ -73,7 +77,7 @@ public class ViewFactory {
     }
 
 
-    class RegistrationBuilder extends BaseScreenView implements RegistrationView {
+    private class RegistrationBuilder extends BaseScreenView implements RegistrationView {
 
         RegistrationBuilder(int layoutId) {
             args = new Bundle();
@@ -132,7 +136,7 @@ public class ViewFactory {
 
 
 
-    class ConfirmationBuilder extends BaseScreenView implements ConfirmationView {
+    private class ConfirmationBuilder extends BaseScreenView implements ConfirmationView {
 
 
         ConfirmationBuilder(int layoutId) {
